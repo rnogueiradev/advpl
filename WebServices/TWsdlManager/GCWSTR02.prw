@@ -55,11 +55,9 @@ For _nX:=1 To 2
 	oWsdl := TWsdlManager():New()
 	
 	If _nX==1
-		//oWsdl:SetAuthentication("grandcru-qa","bz79g25X") //Teste
-		oWsdl:SetAuthentication("grandcru-prod","r3X8wfqU") //Producao
+		oWsdl:SetAuthentication("grandcru-prod","*****") //Producao
 	Else
-		//oWsdl:SetAuthentication("vinogc-qa","trGFc3qb") //Teste
-		oWsdl:SetAuthentication("vinogc-prod","cZ2CVuCa") //Producao
+		oWsdl:SetAuthentication("vinogc-prod","*****") //Producao
 	EndIf
 	
 	xRet := oWsdl:ParseURL( "http://edi.totalexpress.com.br/webservice24.php?wsdl" )
